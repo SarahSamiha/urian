@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkGreen: "#023020",
+      },
+      fontFamily: {
+        playfair: "'Playfair Display', serif"
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
