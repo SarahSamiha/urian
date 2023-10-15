@@ -6,9 +6,12 @@ import ServiceContainer from "./ServiceContainer";
 const Home = () => {
     return (
         <div>
-            <h1>This is home.</h1>
             <Header></Header>
-            <ServiceContainer></ServiceContainer>
+            {/* Services */}
+            <div>
+
+            </div>
+
             <Footer></Footer>
         </div>
     );

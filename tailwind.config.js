@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         darkGreen: "#023020",
+        peach: "#F6C492",
       },
       fontFamily: {
         playfair: "'Playfair Display', serif"
