@@ -51,7 +51,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-inherit  lg:max-w-6xl mx-auto">
+        <div className="navbar bg-inherit lg:max-w-6xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -72,7 +72,7 @@ const Navbar = () => {
                 {
                     user ?
                         <div className="flex gap-2 items-center">
-                            <p className="text-lg text-darkGreen font-semibold">{user.displayName}</p>
+                            <p className="absolute md:static invisible md:visible text-lg text-darkGreen font-semibold">{user.displayName}</p>
                             {user.photoURL ?
                                 <img className="w-[40px] h-[40px] rounded-full" src={`${user.photoURL}`} alt="" />
                                 :

@@ -1,5 +1,4 @@
 import { Link, useRouteError } from "react-router-dom";
-import Navbar from "../../layouts/sharedComponents/Navbar";
 
 
 const ErrorPage = () => {

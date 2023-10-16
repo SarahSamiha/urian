@@ -10,7 +10,7 @@ const Home = () => {
             <Header></Header>
 
             {/* Services */}
-            <div className="mt-14  lg:max-w-6xl mx-auto">
+            <div className="mt-14 max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto">
                 <h1 className="text-5xl font-semibold text-center">Our Services</h1>
                 <p className="w-3/4 mx-auto text-center mt-6 mb-14">
                     Our mission is to be your trusted partner in turning your dreams into reality, whether it is a magical wedding, a joyful birthday celebration, a heartwarming anniversary, a blissful engagement party, a well-deserved retirement bash, or a precious baby shower. We are here for you every step of the way.
@@ -32,8 +32,8 @@ const Home = () => {
                     Join us in creating cherished memories that will last a lifetime. URIAN is here to make your special moments truly extraordinary. Start your journey with us today, and let us turn your vision into reality.
                 </p>
 
-                <div className="card lg:card-side grid lg:grid-cols-2 ">
-                    <figure><img className="w-full h-[550px] rounded-full" src="https://images.unsplash.com/photo-1530023367847-a683933f4172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzb3J0JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Album" /></figure>
+                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none ">
+                    <figure><img className="lg:w-full lg:h-[550px] lg:rounded-full" src="https://images.unsplash.com/photo-1530023367847-a683933f4172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzb3J0JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Album" /></figure>
                     <div className="card-body">
                         <div className="p-4 text-darkGreen">
                             <div className="p-4 text-left">
@@ -52,8 +52,10 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div className="card lg:card-side grid lg:grid-cols-2">
-                    <figure className="order-2"><img className="w-full h-[550px] rounded-full" src="https://images.unsplash.com/photo-1580151134699-e0cfbeb763d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHdlZGRpbmclMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" /></figure>
+
+
+                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none">
+                    <figure className="lg:order-2"><img className="lg:w-full lg:h-[550px] lg:rounded-full" src="https://images.unsplash.com/photo-1580151134699-e0cfbeb763d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHdlZGRpbmclMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" /></figure>
                     <div className="card-body">
                         <div className="p-4 text-darkGreen">
                             <div className="p-4 text-left">
@@ -74,8 +76,8 @@ const Home = () => {
 
 
             {/* Contact us */}
-            <div className="hero h-[500px] mt-14 rounded-2xl  lg:max-w-6xl mx-auto" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmclMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60)' }}>
-                <div className="hero-overlay bg-opacity-70 rounded-2xl"></div>
+            <div className="hero h-[500px] mt-14 lg:rounded-2xl  lg:max-w-6xl mx-auto" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmclMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60)' }}>
+                <div className="hero-overlay bg-opacity-70 lg:rounded-2xl"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md text-peach">
                         <h1 className="mb-5 text-5xl font-bold">Let&apos;s Dream Together <br /></h1>
