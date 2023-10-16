@@ -44,7 +44,7 @@ const Home = () => {
                                     <span className="font-bold">Customized Solutions:</span> Your event is as unique as you are. We work closely with you to tailor our services to match your preferences, themes, and budgets, resulting in a one-of-a-kind experience that will leave a lasting impression.
                                 </p>
                                 <p className="text-xl mb-4">
-                                    <span className="font-bold">Stress-Free Planning:</span> Let us handle the logistics, so you can focus on enjoying your event. From venue selection to décor, catering, entertainment, and more, we've got it covered.
+                                    <span className="font-bold">Stress-Free Planning:</span> Let us handle the logistics, so you can focus on enjoying your event. From venue selection to décor, catering, entertainment, and more, we&apos;ve got it covered.
                                 </p>
                             </div>
                         </div>

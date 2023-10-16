@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 const ServiceCard = ({ service }) => {
@@ -10,6 +11,9 @@ const ServiceCard = ({ service }) => {
             <div className="card-body">
                 <h2 className="card-title text-3xl">{name}</h2>
                 <p className="text-lg">{description.slice(0, 100)}...</p>
+                <p className="pr-14 mb-5 text-xl font-bold">
+                        {price}
+                    </p>
                 <div className="card-actions justify-end">
                     <Link className="font-bold text-blue-600" to={`/service/${id}`}>
                         <button className="btn bg-darkGreen text-white border-none hover:bg-green-800">Details</button></Link>
@@ -19,5 +23,9 @@ const ServiceCard = ({ service }) => {
         </div>
     );
 };
+
+ServiceCard.propTypes = {
+    service: PropTypes.object.isRequired,
+}
 
 export default ServiceCard;

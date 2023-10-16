@@ -8,6 +8,7 @@ import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 
 
 const Login = () => {
+    const [loginSuccess, setLoginSuccess] = useState('');
     const [loginError, setLoginError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
@@ -27,18 +28,19 @@ const Login = () => {
 
         signIn(email, password)
             .then(() => {
+                setLoginSuccess('Login Successful')
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                setLoginError(error);
+                setLoginError(error.message);
             })
     }
 
     const signInWithGoogle = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
-            .then((res) => {
-                console.log(res);
+            .then(() => {
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error);
@@ -78,6 +80,11 @@ const Login = () => {
                                 <button className="btn hover:bg-green-800 bg-purple text-white border-none">Login</button>
                             </div>
                         </form>
+                        {
+                            loginSuccess && <p className="text-darkGreen text-lg text-center pb-3">
+                                {loginSuccess}
+                            </p>
+                        }
                         {
                             loginError && <p className="text-purple text-lg text-center pb-3">
                                 {loginError}

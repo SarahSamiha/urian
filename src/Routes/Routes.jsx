@@ -7,6 +7,7 @@ import Register from "../pages/auth/Register";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import ServiceDetail from "../pages/ServiceDetail/ServiceDetail";
+import PrivateRoutes from "./PrivateRoutes";
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/service/:id",
-                element: <ServiceDetail></ServiceDetail>,
+                element: <PrivateRoutes><ServiceDetail></ServiceDetail></PrivateRoutes>,
                 loader:() => fetch('/services.json'),
             },
             {

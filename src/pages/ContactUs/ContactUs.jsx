@@ -40,7 +40,7 @@ const ContactUs = () => {
                 </div>
 
 
-                <div className='text-darkGreen font-bold bg-darkGreen bg-opacity-30 shadow-lg flex justify-between items-center py-3 px-14 rounded-lg w-[350px] md:w-[700px]'>
+                <div className='text-darkGreen font-bold bg-darkGreen bg-opacity-30 shadow-lg flex justify-between items-center py-3 px-14 rounded-lg w-[350px] md:w-[700px] mb-16'>
                     <div className='flex gap-6 items-center p-6 mr-14'>
                         <BsFillChatDotsFill className='text-3xl'></BsFillChatDotsFill>
                         <div>
@@ -51,7 +51,7 @@ const ContactUs = () => {
                                 All Week: 09:00 am- 07:00 pm</p>
                         </div>
                     </div>
-                    <button className='btn bg-purple text-white border-none hover:bg-green-800'>Contact</button>
+                    <button className='btn bg-purple text-white border-none hover:bg-green-800 '>Contact</button>
                 </div>
             </div>
         </div>
