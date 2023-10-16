@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({ service }) => {
@@ -8,9 +9,11 @@ const ServiceCard = ({ service }) => {
             <figure><img src={image} alt="img" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-3xl">{name}</h2>
-                <p className="text-lg">{description.slice(0,100)}...</p>
+                <p className="text-lg">{description.slice(0, 100)}...</p>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-darkGreen text-white border-none hover:bg-green-800">Details</button>
+                    <Link className="font-bold text-blue-600" to={`/service/${id}`}>
+                        <button className="btn bg-darkGreen text-white border-none hover:bg-green-800">Details</button></Link>
+
                 </div>
             </div>
         </div>
