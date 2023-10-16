@@ -2,7 +2,7 @@
 
 Welcome to our Event Management Website repository. This website is built using React, React Router, Tailwind CSS, DaisyUI, Firebase Authentication, React Icons, and more. It provides a platform for users to explore services, book appointments, and connect with us for their special events.
 
-You can visit the live website here: [Event Management Website](https://urian-c80f2.web.app)
+You can visit the live website here: [URIAN](https://urian-c80f2.web.app)
 
 ## Features
 
