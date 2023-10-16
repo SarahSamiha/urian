@@ -5,7 +5,7 @@ import Navbar from "./sharedComponents/Navbar";
 const Root = () => {
     return (
         <div className="bg-purple bg-opacity-10">
-            <div className="font-playfair lg:max-w-6xl mx-auto">
+            <div className="font-playfair">
                 <Navbar></Navbar>
                 <Outlet></Outlet>
 

@@ -11,13 +11,13 @@ const Navbar = () => {
                 };
             }}
         >Home</NavLink></li>
-        <li><NavLink to='/myBookings'
+        <li><NavLink to='/contactUs'
             style={({ isActive }) => {
                 return {
                     backgroundColor: isActive ? "#023020" : "",
                 };
             }}
-        >My Bookings</NavLink></li>
+        >Contact Us</NavLink></li>
         <li><NavLink to='/profile'
             style={({ isActive }) => {
                 return {
@@ -28,7 +28,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-inherit">
+        <div className="navbar bg-inherit  lg:max-w-6xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
