@@ -2,17 +2,30 @@ import { Link, useLoaderData } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import ServiceCard from "./ServiceCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Home = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const services = useLoaderData();
     return (
         <div>
             <Header></Header>
 
             {/* Services */}
-            <div className="mt-14 max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto">
-                <h1 className="text-5xl font-semibold text-center">Our Services</h1>
-                <p className="w-3/4 mx-auto text-center mt-6 mb-14">
+            <div className="mt-14 max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <h1 className="text-5xl font-semibold text-center" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">Our Services</h1>
+                <p className="w-3/4 mx-auto text-center mt-6 mb-14" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     Our mission is to be your trusted partner in turning your dreams into reality, whether it is a magical wedding, a joyful birthday celebration, a heartwarming anniversary, a blissful engagement party, a well-deserved retirement bash, or a precious baby shower. We are here for you every step of the way.
                 </p>
                 <div className="grid lg:grid-cols-3 gap-6">
@@ -26,13 +39,17 @@ const Home = () => {
 
 
             {/* Focus */}
-            <div className="mt-16  lg:max-w-6xl mx-auto">
+            <div className="mt-16  lg:max-w-6xl mx-auto" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <h1 className="text-5xl font-semibold text-center">Why Choose Us?</h1>
                 <p className="w-3/4 mx-auto text-center mt-6 mb-14">
                     Join us in creating cherished memories that will last a lifetime. URIAN is here to make your special moments truly extraordinary. Start your journey with us today, and let us turn your vision into reality.
                 </p>
 
-                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none ">
+                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none " data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <figure><img className="lg:w-full lg:h-[550px] lg:rounded-full" src="https://images.unsplash.com/photo-1530023367847-a683933f4172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzb3J0JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Album" /></figure>
                     <div className="card-body">
                         <div className="p-4 text-darkGreen">
@@ -54,7 +71,9 @@ const Home = () => {
                 </div>
 
 
-                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none">
+                <div className="card lg:card-side grid lg:grid-cols-2 rounded-none" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <figure className="lg:order-2"><img className="lg:w-full lg:h-[550px] lg:rounded-full" src="https://images.unsplash.com/photo-1580151134699-e0cfbeb763d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHdlZGRpbmclMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" /></figure>
                     <div className="card-body">
                         <div className="p-4 text-darkGreen">
@@ -77,9 +96,11 @@ const Home = () => {
 
             {/* Contact us */}
             <div className="hero h-[500px] mt-14 lg:rounded-2xl  lg:max-w-6xl mx-auto" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmclMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60)' }}>
-                <div className="hero-overlay bg-opacity-70 lg:rounded-2xl"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md text-peach">
+                <div className="hero-overlay bg-opacity-70 lg:rounded-2xl" ></div>
+                <div className="hero-content text-center text-neutral-content" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div className="max-w-md text-peach" >
                         <h1 className="mb-5 text-5xl font-bold">Let&apos;s Dream Together <br /></h1>
                         <p className="mb-5 text-xl">
                             Contact us and we will set up a video call to discuss your requirements in details.
