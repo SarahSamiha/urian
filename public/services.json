@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "Weddings",
+        "image": "https://i.ibb.co/tznmvTG/wedding.jpg",
+        "price": "$10,000 - $50,000",
+        "description": "Turn your dream wedding into reality with our expert planners. From elegant venues to exquisite decor, our team will ensure every detail is perfect for your special day."
+    },
+    {
+        "id": 2,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/qp3shW7/birthday.jpg",
+        "price": "$500 - $5,000",
+        "description": "Celebrate your special day with a memorable birthday party. Let us handle everything, so you can enjoy the festivities with your loved ones."
+    },
+    {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/m9qPf8M/annyversary.jpg",
+        "price": "$1,000 - $10,000",
+        "description": "Commemorate your love story with a romantic anniversary celebration. Our planners will create an enchanting experience that reflects your journey together."
+    },
+    {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/jyRzFs2/engagement.jpg",
+        "price": "$1,000 - $7,000",
+        "description": "Celebrate your engagement with style and joy. We'll plan every detail to make your engagement party an event to remember as you embark on this exciting journey."
+    },
+    {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/PjbSygy/retirement.jpg",
+        "price": "$2,000 - $10,000",
+        "description": "Say farewell to your working years in grand style with our retirement party planning services. We'll make your transition to retirement a celebration to cherish."
+    },
+    {
+        "id": 6,
+        "name": "Baby Shower",
+        "image": "https://i.ibb.co/cgyNj8q/baby-Shower.jpg",
+        "price": "$500 - $2,500",
+        "description": "Celebrate the imminent arrival of your little one with a delightful baby shower. Our expert planners will ensure it's a joyful occasion for you and your guests."
+    }
+]
+
+
+
+
+

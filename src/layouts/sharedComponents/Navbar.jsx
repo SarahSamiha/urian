@@ -7,28 +7,28 @@ const Navbar = () => {
         <li><NavLink to='/'
             style={({ isActive }) => {
                 return {
-                    backgroundColor: isActive ? "#023020" : "white",
+                    backgroundColor: isActive ? "#023020" : "",
                 };
             }}
         >Home</NavLink></li>
         <li><NavLink to='/myBookings'
             style={({ isActive }) => {
                 return {
-                    backgroundColor: isActive ? "#023020" : "white",
+                    backgroundColor: isActive ? "#023020" : "",
                 };
             }}
         >My Bookings</NavLink></li>
         <li><NavLink to='/profile'
             style={({ isActive }) => {
                 return {
-                    backgroundColor: isActive ? "#023020" : "white",
+                    backgroundColor: isActive ? "#023020" : "",
                 };
             }}
         >Profile</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-inherit">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -5,6 +5,7 @@ import Profile from "../pages/Profile/Profile";
 import MyBookings from "../pages/mybookings/MyBookings";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,8 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                loader:() => fetch('/services.json'),
+                errorElement: <ErrorPage></ErrorPage>,
             },
             {
                 path: "/service/:id",

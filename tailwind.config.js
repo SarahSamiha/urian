@@ -9,6 +9,7 @@ export default {
       colors: {
         darkGreen: "#023020",
         peach: "#F6C492",
+        purple: "#900C3F"
       },
       fontFamily: {
         playfair: "'Playfair Display', serif"
