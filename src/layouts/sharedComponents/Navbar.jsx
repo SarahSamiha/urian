@@ -23,20 +23,6 @@ const Navbar = () => {
                 };
             }}
         >Home</NavLink></li>
-        <li><NavLink to='/contactUs'
-            style={({ isActive }) => {
-                return {
-                    backgroundColor: isActive ? "#023020" : "",
-                };
-            }}
-        >Contact Us</NavLink></li>
-        <li><NavLink to='/profile'
-            style={({ isActive }) => {
-                return {
-                    backgroundColor: isActive ? "#023020" : "",
-                };
-            }}
-        >Profile</NavLink></li>
         <li><NavLink to='/register'
             style={({ isActive }) => {
                 return {
@@ -44,6 +30,24 @@ const Navbar = () => {
                 };
             }}
         >Register</NavLink></li>
+        {user &&
+            <>
+                <li><NavLink to='/contactUs'
+                    style={({ isActive }) => {
+                        return {
+                            backgroundColor: isActive ? "#023020" : "",
+                        };
+                    }}
+                >Contact Us</NavLink></li>
+                <li><NavLink to='/profile'
+                    style={({ isActive }) => {
+                        return {
+                            backgroundColor: isActive ? "#023020" : "",
+                        };
+                    }}
+                >Profile</NavLink></li>
+            </>
+        }
     </>
 
     return (
@@ -69,7 +73,7 @@ const Navbar = () => {
                     user ?
                         <div className="flex gap-2 items-center">
                             <p className="text-lg text-darkGreen font-semibold">{user.displayName}</p>
-                            { user.photoURL?
+                            {user.photoURL ?
                                 <img className="w-[40px] h-[40px] rounded-full" src={`${user.photoURL}`} alt="" />
                                 :
                                 <img className="w-[40px] h-[40px] rounded-full" src={userDefaultPic} alt="" />

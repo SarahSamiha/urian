@@ -1,8 +1,15 @@
 import { BsFillChatDotsFill } from 'react-icons/bs';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 import { GrMail } from 'react-icons/gr';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
+
+    const notify = () =>{
+        toast('We will contact you soon.')
+    }
+
     return (
         <div className="lg:max-w-6xl mx-auto mt-14">
             <div className="flex flex-col gap-5 justify-center items-center">
@@ -21,7 +28,7 @@ const ContactUs = () => {
                                 You can mail us anytime you want</p>
                         </div>
                     </div>
-                    <button className='btn bg-purple text-white border-none hover:bg-green-800'>Contact</button>
+                    <button onClick={notify} className='btn bg-purple text-white border-none hover:bg-green-800'>Contact</button>
                 </div>
 
 
@@ -36,7 +43,7 @@ const ContactUs = () => {
                                 All Week: 09:00 am- 07:00 pm</p>
                         </div>
                     </div>
-                    <button className='btn bg-purple text-white border-none hover:bg-green-800'>Contact</button>
+                    <button onClick={notify} className='btn bg-purple text-white border-none hover:bg-green-800'>Contact</button>
                 </div>
 
 
@@ -51,9 +58,10 @@ const ContactUs = () => {
                                 All Week: 09:00 am- 07:00 pm</p>
                         </div>
                     </div>
-                    <button className='btn bg-purple text-white border-none hover:bg-green-800 '>Contact</button>
+                    <button onClick={notify} className='btn bg-purple text-white border-none hover:bg-green-800 '>Contact</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
